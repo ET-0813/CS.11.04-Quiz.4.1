@@ -11,7 +11,6 @@ class MainTest {
         assertTrue(Main.numberOfVowels(two) == 9);
         assertTrue(Main.numberOfVowels(three) == 5);
     }
-
     @org.junit.jupiter.api.Test
     void notDivisible() {
         assertTrue(Main.notDivisibleBy235(5) == 1);
@@ -26,10 +25,12 @@ class MainTest {
         String two = "The_Stealth_Warrior";
         String three = "The_Stealth-Warrior";
         String four = "-no_shot_bruh_";
+        System.out.println(Main.camelCaseMe(one));
         assertTrue(Main.camelCaseMe(one).equals("theStealthWarrior"));
         assertTrue(Main.camelCaseMe(two).equals("TheStealthWarrior"));
         assertTrue(Main.camelCaseMe(three).equals("TheStealthWarrior"));
         assertTrue(Main.camelCaseMe(four).equals("NoShotBruh"));
+
     }
 
 }
